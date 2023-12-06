@@ -1,0 +1,53 @@
+name = "D717-Student"
+description = "D717 Classroom Student OS"
+version = "1.0.0"
+distro = "rocky-93"
+
+[[groups]]
+name = "Workstation"
+
+[[groups]]
+name = "Development Tools"
+
+[[groups]]
+name = "Headless Management"
+
+[[groups]]
+name = "RPM Development Tools"
+
+[[groups]]
+name = "GNOME Applications"
+
+[[groups]]
+name = "Fonts"
+
+[[groups]]
+name = "KVM platform specific packages"
+
+[customizations]
+hostname = "d717"
+
+[customizations.kernel]
+append = ""
+
+[[customizations.sshkey]]
+user = "root"
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMkocqHO3cg8f+b5lo+X+RGPi+yrxzKosqZrsnv8h8o root@control.node.d717"
+
+[[customizations.user]]
+name = "uch"
+password = "$6$7uiORFo098t9tR2A$J5bg2ODRumJYNxL/eUjDK/dTQIBF0iZTnl0PZQpsQcoyuGGJrPmMmrQ3mWxG3L8HV1OswPCkEVsdgB0TpdWbt1"
+
+[[customizations.user]]
+name = "naruko_hstk"
+password = "$6$AjsRBcQim8DgBfPh$6v9nPOlywJ02OMv9IIpJsXPB/eIQFirgWfpoAXL0FDQYIFkf67yoWq4/ZDpXeM3l5uAIxzyMfEMQwew.yFhQb."
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHkhf2+CoFYzv0vZOBLn2Q9TWzcv7E39Yw7UfcrH+ZSy naruko_hstk@control.node.d717"
+groups = ["wheel"]
+
+[customizations.timezone]
+timezone = "Asia/Taipei"
+ntpservers = ["tock.stdtime.gov.tw", "watch.stdtime.gov.tw", "time.stdtime.gov.tw", "clock.stdtime.gov.tw", "tick.stdtime.gov.tw"]
+
+[customizations.locale]
+languages = ["en_US.UTF8", "zh_TW.UTF8", "ja_JP.UTF8"]
+keyboard = "us"

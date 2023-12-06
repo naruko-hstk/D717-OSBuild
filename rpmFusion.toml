@@ -1,0 +1,7 @@
+id = "rpmfusion"
+name = "RPM Fusion Free Updates Released - EL9"
+url = "http://mirrors.rpmfusion.org/metalink?repo=free-el-updates-released-9&arch=x86_64"
+type = "yum-metalink"
+check_ssl = true
+check_gpg = false
+gpgkey_urls = ["https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-el-9"	

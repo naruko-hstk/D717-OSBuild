@@ -1,6 +1,6 @@
 name = "D717-Student"
 description = "D717 Classroom Student OS"
-version = "1.0.0"
+version = "1.1.0"
 distro = "rocky-93"
 
 [[groups]]
@@ -24,11 +24,20 @@ name = "Fonts"
 [[groups]]
 name = "KVM platform specific packages"
 
+[[groups]]
+name = "Virtualization Host"
+
+[[groups]]
+name = "Virtualization Client"
+
+[[groups]]
+name = "Virtualization Tools"
+
+[[packages]]
+name = "virt-manager"
+
 [customizations]
 hostname = "d717"
-
-[customizations.kernel]
-append = ""
 
 [[customizations.sshkey]]
 user = "root"

@@ -3,5 +3,5 @@ name = "Extra Packages for Enterprise Linux 9 - x86_64"
 url = "https://mirrors.fedoraproject.org/metalink?repo=epel-9&arch=x86_64&infra=metalink&content=rocky"
 type = "yum-metalink"
 check_ssl = true
-check_gpg = false
-gpgkey_urls = ["http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9"]
+check_gpg = true
+gpgkeys = ["http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9"]

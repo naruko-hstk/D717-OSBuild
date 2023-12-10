@@ -4,8 +4,7 @@ url = "https://dl.rockylinux.org/pub/rocky/9.3/CRB/x86_64/os/"
 type = "yum-baseurl"
 check_ssl = true
 check_gpg = true
-gpgkeys = ['''
------BEGIN PGP PUBLIC KEY BLOCK-----
+gpgkeys = ['''-----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: resf.keykeeper.v1
 Comment: Keykeeper
 
